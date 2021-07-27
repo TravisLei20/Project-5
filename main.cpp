@@ -29,9 +29,8 @@ int main(int argc, char* argv[])
     parser.setTokens(lexer -> getToken());
     parser.parse();
 
-    //Project-3
+    //Project-3/4/5
     Interpreter interpreter(parser.getDatalogProgram());
-
 
     delete lexer;
 
