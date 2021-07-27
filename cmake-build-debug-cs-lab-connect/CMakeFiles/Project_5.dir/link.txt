@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/Project_5.dir/ColonAutomaton.cpp.o CMakeFiles/Project_5.dir/ColonDashAutomaton.cpp.o CMakeFiles/Project_5.dir/Lexer.cpp.o CMakeFiles/Project_5.dir/main.cpp.o CMakeFiles/Project_5.dir/MatcherAutomaton.cpp.o CMakeFiles/Project_5.dir/Parser.cpp.o CMakeFiles/Project_5.dir/Token.cpp.o  -o Project_5 

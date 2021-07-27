@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" remoteFilesAllowedToDisappearOnAutoupload="false">
+    <serverData>
+      <paths name="CS Lab Connect (05d70728-fd2c-4f71-bf2d-68278b6287e6)">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/LiveProject-5" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="CS Lab Connect (bbecb5a1-42b7-4e08-a6fb-2464a1c29c28)">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/LiveProject-5" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+          <excludedPaths>
+            <excludedPath local="true" path="$PROJECT_DIR$/cmake-build-debug-cs-lab-connect" />
+          </excludedPaths>
+        </serverdata>
+      </paths>
+    </serverData>
+  </component>
+</project>
