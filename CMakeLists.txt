@@ -33,4 +33,4 @@ add_executable(Project_5
         StringAutomaton.h
         Token.cpp
         Token.h
-        Tuple.h Graph.h)
+        Tuple.h Graph.h Node.h)

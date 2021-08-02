@@ -7,17 +7,13 @@
 
 #include <stack>
 
+#include "Node.h"
+
 class Graph
 {
 private:
-    struct Node
-    {
-        Node(){}
-        ~Node() = default;
-        bool visitedNode = false;
-        set<unsigned int> adjacencyList;
-        unsigned int ruleID;
-    };
+
+    map<unsigned int , Node> nodeMap;
 
     stack<unsigned int> postOrder;
     set<unsigned int> SCC;
@@ -26,6 +22,23 @@ private:
 public:
     Graph(){}
     ~Graph(){}
+
+    void insert(unsigned int nodeId , Node node)
+    {
+        nodeMap.insert(pair<unsigned int , Node> (nodeId, node));
+    }
+
+    Node createNode(unsigned int givenNodeId , set<unsigned int> givenSet)
+    {
+        Node node(givenNodeId , givenSet);
+        return node;
+    }
+
+    map<unsigned int, Node> getNodeMap() const
+    {
+        return nodeMap;
+    }
+
 
     void setPostOrder(stack<unsigned int> givenStack)
     {
@@ -54,5 +67,6 @@ public:
 
 
 };
+
 
 #endif //PROJECT_5_GRAPH_H

@@ -24,6 +24,8 @@ private:
     Database data;
     unsigned int populateCount = 0;
 
+    Graph graph;
+
 
 public:
     Interpreter(){}
@@ -168,9 +170,23 @@ public:
         }
     }
 
-    void forwardDependency()
+    void forwardDependency(vector<Rules>& givenRules)
     {
-
+        for (unsigned int i = 0 ; i < givenRules.size() ; i++)
+        {
+            set<unsigned int> ruleIdNums;
+            for (unsigned int j = 0 ; j < givenRules.at(i).getPredicateListSize() ; j++)
+            {
+                for (unsigned int k = 0 ; k < givenRules.at(k).getHeadPredicate().getSize() ; k++)
+                {
+                    if(givenRules.at(i).getPredicateList().at(j).getID() == givenRules.at(k).getHeadPredicate().getID())
+                    {
+                        ruleIdNums.insert(k);
+                    }
+                }
+            }
+            graph.insert(i , graph.createNode(i , ruleIdNums));
+        }
     }
 
     void reverseDependency()

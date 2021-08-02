@@ -54,6 +54,10 @@ Parameter.h
 Rules.h
 /users/guest/l/leicr/LiveProject-5/Rules.h
 
+/users/guest/l/leicr/LiveProject-5/Graph.h
+stack
+-
+
 /users/guest/l/leicr/LiveProject-5/Header.h
 vector
 -
@@ -71,6 +75,8 @@ DatalogProgram.h
 /users/guest/l/leicr/LiveProject-5/DatalogProgram.h
 Header.h
 /users/guest/l/leicr/LiveProject-5/Header.h
+Graph.h
+/users/guest/l/leicr/LiveProject-5/Graph.h
 
 /users/guest/l/leicr/LiveProject-5/Lexer.h
 vector

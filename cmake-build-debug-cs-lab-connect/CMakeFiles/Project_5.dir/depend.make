@@ -48,6 +48,7 @@ CMakeFiles/Project_5.dir/main.cpp.o: ../ColonDashAutomaton.h
 CMakeFiles/Project_5.dir/main.cpp.o: ../CommentAutomaton.h
 CMakeFiles/Project_5.dir/main.cpp.o: ../Database.h
 CMakeFiles/Project_5.dir/main.cpp.o: ../DatalogProgram.h
+CMakeFiles/Project_5.dir/main.cpp.o: ../Graph.h
 CMakeFiles/Project_5.dir/main.cpp.o: ../Header.h
 CMakeFiles/Project_5.dir/main.cpp.o: ../IDAutomaton.h
 CMakeFiles/Project_5.dir/main.cpp.o: ../Interpreter.h
