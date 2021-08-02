@@ -24,7 +24,8 @@ private:
     Database data;
     unsigned int populateCount = 0;
 
-    Graph graph;
+    Graph forwardGraph;
+    Graph reverseGraph;
 
 
 public:
@@ -52,8 +53,11 @@ public:
             data.addTuple(facts.at(i).getID() , myTuple);
         }
 
-        unsigned int preCount = 0;
-        unsigned int postCount = 0;
+        unsigned int preCount;
+        unsigned int postCount;
+
+        forwardDependency(rules);
+        reverseDependency();
 
         cout << "Rule Evaluation" << endl;
         do
@@ -177,7 +181,7 @@ public:
             set<unsigned int> ruleIdNums;
             for (unsigned int j = 0 ; j < givenRules.at(i).getPredicateListSize() ; j++)
             {
-                for (unsigned int k = 0 ; k < givenRules.at(k).getHeadPredicate().getSize() ; k++)
+                for (unsigned int k = 0 ; k < givenRules.size() ; k++)
                 {
                     if(givenRules.at(i).getPredicateList().at(j).getID() == givenRules.at(k).getHeadPredicate().getID())
                     {
@@ -185,13 +189,25 @@ public:
                     }
                 }
             }
-            graph.insert(i , graph.createNode(i , ruleIdNums));
+            forwardGraph.insert(i , Node(i , ruleIdNums));
         }
     }
 
     void reverseDependency()
     {
+        for (unsigned int i = 0 ; i < forwardGraph.getNodeMap().size() ; i++)
+        {
+            set<unsigned int> empty;
+            reverseGraph.insert(i , Node(i , empty));
+        }
 
+        for (pair<unsigned int , Node> i : forwardGraph.getNodeMap())
+        {
+            for (unsigned int k : i.second.getAdjacencyList())
+            {
+                reverseGraph.insertNum(k , i.first);
+            }
+        }
     }
 
 };

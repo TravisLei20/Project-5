@@ -21,6 +21,11 @@ public:
     }
     ~Node() = default;
 
+    void insert(unsigned int num)
+    {
+        adjacencyList.insert(num);
+    }
+
     bool isVisitedNode() const
     {
         return visitedNode;

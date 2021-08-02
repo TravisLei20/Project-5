@@ -28,10 +28,9 @@ public:
         nodeMap.insert(pair<unsigned int , Node> (nodeId, node));
     }
 
-    Node createNode(unsigned int givenNodeId , set<unsigned int> givenSet)
+    void insertNum(unsigned int id , unsigned int num)
     {
-        Node node(givenNodeId , givenSet);
-        return node;
+        nodeMap.at(id).insert(num);
     }
 
     map<unsigned int, Node> getNodeMap() const

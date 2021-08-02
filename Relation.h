@@ -65,8 +65,7 @@ public:
         {
             unsigned int preCount = this->getTuples().size();
             this->addTuples(t);
-            //Tuple tuple = t;
-            //cout << givenRelation.getTuples().size();
+
             if (this->getTuples().size() != preCount)
             {
                 cout << " ";
