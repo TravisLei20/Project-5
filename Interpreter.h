@@ -9,6 +9,7 @@
 #include "Database.h"
 #include "DatalogProgram.h"
 #include "Header.h"
+#include "Graph.h"
 
 using namespace std;
 
@@ -107,9 +108,6 @@ public:
         relation = relation.project(columnsToKeep);
         relation = relation.rename(newHeader);
 
-        //Relation tempRelation = data.getRelation(givenRule.getHeadPredicate().getID());
-        //tempRelation.unionFunction(relation);
-
         data.getRelation(givenRule.getHeadPredicate().getID()).unionFunction(relation);
 
     }
@@ -168,6 +166,16 @@ public:
             cout << endl;
             newRelation.toString();
         }
+    }
+
+    void forwardDependency()
+    {
+
+    }
+
+    void reverseDependency()
+    {
+
     }
 
 };
