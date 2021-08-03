@@ -60,24 +60,49 @@ public:
         reverseDependency();
 
         reverseGraph.dfsForestReverse(reverseGraph);
+
+        forwardGraph.clearPostOrder();
         forwardGraph.setPostOrder(reverseGraph.getPostOrder());
+
         forwardGraph.dfsForestForward(forwardGraph);
 
-        cout << "Rule Evaluation" << endl;
-        do
+        cout << "Dependency Graph" << endl;
+        for (unsigned int i = 0 ; i < forwardGraph.getNodeMap().size() ; i++)
         {
-            preCount = data.count();
+            forwardGraph.toString(i);
+        }
 
-            for (unsigned int i = 0 ; i < rules.size() ; i++)
+        cout << endl << "Rule Evaluation" << endl;
+
+
+        for(unsigned int i = 0 ; i < forwardGraph.getSCCs().size() ; i++)
+        {
+            unsigned int key = *forwardGraph.getSCCs().at(i).begin();
+            if (forwardGraph.getSCCs().at(i).size() == 1 && forwardGraph.getHasSelfLoop(key))//self loop
             {
-                cout << rules.at(i).toString() << endl;
-                evaluateRule(rules.at(i));
+                cout << rules.at(key).toString() << endl;
+                evaluateRule(rules.at(key));
             }
+            else
+            {
+                do
+                {
+                    preCount = data.count();
 
-            postCount = data.count();
-            populateCount++;
+                    //TODO Something is wrong with this
+                    for (unsigned int j : forwardGraph.getSCCs().at(i))
+                    {
+                        cout << rules.at(j).toString() << endl;
+                        evaluateRule(rules.at(j));
+                    }
 
-        } while (preCount != postCount);
+                    postCount = data.count();
+                    populateCount++;
+
+                } while (preCount != postCount);
+            }
+        }
+
 
         cout << endl;
         cout << "Schemes populated after " << populateCount << " passes through the Rules.";
@@ -194,6 +219,7 @@ public:
                 }
             }
             forwardGraph.insert(i , Node(i , ruleIdNums));
+            forwardGraph.hasSelfLoop(i);
         }
     }
 

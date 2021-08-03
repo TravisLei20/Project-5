@@ -12,7 +12,6 @@
 class Graph
 {
 private:
-
     map<unsigned int , Node> nodeMap;
 
     vector<unsigned int> postOrder;
@@ -37,14 +36,18 @@ public:
     void dfsForestForward(Graph& givenGraph)
     {
         SCC.clear();
-        for (unsigned int i = postOrder.size()-1 ;  i != -1 ; i--) //start at top and go down
+        vector<unsigned int> tempPostOrder = postOrder;
+        for (unsigned int i = postOrder.size()-1 ; i < postOrder.size() ; i--) //start at top and go down
         {
-            if (!givenGraph.nodeMap.at(i).isVisitedNode())
+            if (!givenGraph.nodeMap.at(postOrder.at(i)).isVisitedNode())
             {
-                dfs(givenGraph.nodeMap.at(i) , givenGraph);
+                dfs(givenGraph.nodeMap.at(postOrder.at(i)) , givenGraph);
                 SCCs.push_back(SCC);
+                SCC.clear();
             }
         }
+        postOrder.clear();
+        postOrder = tempPostOrder;
     }
 
     void dfs(Node& givenNode , Graph& givenGraph)
@@ -72,6 +75,16 @@ public:
         nodeMap.at(id).insert(num);
     }
 
+    void hasSelfLoop(unsigned int id)
+    {
+        nodeMap.at(id).hasSelfLoopFunction();
+    }
+
+    bool getHasSelfLoop(unsigned int id)
+    {
+        return nodeMap.at(id).isHasSelfLoop();
+    }
+
     map<unsigned int, Node> getNodeMap() const
     {
         return nodeMap;
@@ -88,6 +101,11 @@ public:
         return postOrder;
     }
 
+    void clearPostOrder()
+    {
+        postOrder.clear();
+    }
+
     vector<set<unsigned int>> getSCCs()
     {
         return SCCs;
@@ -98,6 +116,10 @@ public:
         return nodeMap.at(key);
     }
 
+    void toString(unsigned int key)
+    {
+        nodeMap.at(key).toString();
+    }
 
 };
 
