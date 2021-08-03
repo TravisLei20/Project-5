@@ -8,7 +8,7 @@
 class Node
 {
 private:
-    bool visitedNode = false;
+    bool visitedNode;
     set<unsigned int> adjacencyList;
     unsigned int nodeID;
 
@@ -18,6 +18,7 @@ public:
     {
         adjacencyList = givenSet;
         nodeID = givenID;
+        visitedNode = false;
     }
     ~Node() = default;
 
@@ -33,7 +34,7 @@ public:
 
     void setVisitedNode(bool visitedNode)
     {
-        Node::visitedNode = visitedNode;
+        this->visitedNode = visitedNode;
     }
 
     set<unsigned int> getAdjacencyList() const

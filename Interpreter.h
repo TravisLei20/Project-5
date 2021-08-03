@@ -59,6 +59,9 @@ public:
         forwardDependency(rules);
         reverseDependency();
 
+        reverseGraph.dfsForestReverse(reverseGraph);
+        forwardGraph.dfsForestForward(forwardGraph);
+
         cout << "Rule Evaluation" << endl;
         do
         {

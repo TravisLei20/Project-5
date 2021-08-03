@@ -15,13 +15,60 @@ private:
 
     map<unsigned int , Node> nodeMap;
 
-    stack<unsigned int> postOrder;
+    vector<unsigned int> postOrder;
     set<unsigned int> SCC;
     vector<set<unsigned int>> SCCs;
 
 public:
     Graph(){}
     ~Graph(){}
+
+    void dfsForestReverse(Graph& givenGraph)
+    {
+        for (unsigned int i = 0 ; i < givenGraph.nodeMap.size() ; i++)
+        {
+            if (!givenGraph.nodeMap.at(i).isVisitedNode())
+            {
+                dfs(givenGraph.nodeMap.at(i) , givenGraph);
+            }
+        }
+
+//        for (pair<unsigned int , Node> i : givenGraph.getNodeMap())
+//        {
+//            if (!i.second.isVisitedNode())
+//            {
+//                dfs(i.second , givenGraph);
+//            }
+//        }
+    }
+
+    void dfsForestForward(Graph& givenGraph)
+    {
+        for (unsigned int i = givenGraph.postOrder.size()-1 ;  i == 0 ; i--) //start at top and go down
+        {
+//            SCC.clear();
+            if (!givenGraph.nodeMap.at(i).isVisitedNode())
+            {
+                dfs(givenGraph.nodeMap.at(i) , givenGraph);
+                SCCs.push_back(SCC);
+            }
+        }
+    }
+
+    void dfs(Node& givenNode , Graph& givenGraph)
+    {
+        givenGraph.nodeMap.at(givenNode.getNodeId()).setVisitedNode(true);
+
+        for (unsigned int j : givenNode.getAdjacencyList())
+        {
+            if (!givenGraph.nodeMap.at(j).isVisitedNode())
+            {
+                dfs(givenGraph.nodeMap.at(j) , givenGraph);
+            }
+        }
+        postOrder.push_back(givenNode.getNodeId());
+        SCC.insert(givenNode.getNodeId());
+    }
 
     void insert(unsigned int nodeId , Node node)
     {
@@ -39,12 +86,12 @@ public:
     }
 
 
-    void setPostOrder(stack<unsigned int> givenStack)
+    void setPostOrder(vector<unsigned int> givenStack)
     {
         postOrder = givenStack;
     }
 
-    stack<unsigned int> getPostOrder()
+    vector<unsigned int> getPostOrder()
     {
         return postOrder;
     }
@@ -54,14 +101,9 @@ public:
         return SCCs;
     }
 
-    void dfsForest(Graph& givenGraph)
+    Node at(unsigned int key)
     {
-
-    }
-
-    void dfs(Node& givenNode , Graph& givenGraph)
-    {
-
+        return nodeMap.at(key);
     }
 
 
