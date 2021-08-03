@@ -32,21 +32,13 @@ public:
                 dfs(givenGraph.nodeMap.at(i) , givenGraph);
             }
         }
-
-//        for (pair<unsigned int , Node> i : givenGraph.getNodeMap())
-//        {
-//            if (!i.second.isVisitedNode())
-//            {
-//                dfs(i.second , givenGraph);
-//            }
-//        }
     }
 
     void dfsForestForward(Graph& givenGraph)
     {
-        for (unsigned int i = givenGraph.postOrder.size()-1 ;  i == 0 ; i--) //start at top and go down
+        SCC.clear();
+        for (unsigned int i = postOrder.size()-1 ;  i != -1 ; i--) //start at top and go down
         {
-//            SCC.clear();
             if (!givenGraph.nodeMap.at(i).isVisitedNode())
             {
                 dfs(givenGraph.nodeMap.at(i) , givenGraph);

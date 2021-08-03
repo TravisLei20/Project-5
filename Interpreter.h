@@ -60,6 +60,7 @@ public:
         reverseDependency();
 
         reverseGraph.dfsForestReverse(reverseGraph);
+        forwardGraph.setPostOrder(reverseGraph.getPostOrder());
         forwardGraph.dfsForestForward(forwardGraph);
 
         cout << "Rule Evaluation" << endl;
