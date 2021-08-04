@@ -6,5 +6,5 @@ CXX_FLAGS = -g   -std=gnu++14
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/users/guest/l/leicr/LiveProject-5/. 
+CXX_INCLUDES = -I/users/guest/l/leicr/Project-5/. 
 

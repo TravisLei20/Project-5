@@ -78,7 +78,25 @@ public:
         for(unsigned int i = 0 ; i < forwardGraph.getSCCs().size() ; i++)
         {
             populateCount = 0;
-            cout << "SCC: R" << i << endl;
+            cout << "SCC: ";
+
+            unsigned int count = 0;
+            stringstream ss;
+            for (unsigned int k : forwardGraph.getSCCs().at(i))
+            {
+                if (count == *forwardGraph.getSCCs().at(i).end() - 1)
+                {
+                    ss << "R" << k << endl;
+                }
+                else
+                {
+                    ss << "R" << k << ",";
+                }
+                count++;
+            }
+
+            cout << ss.str();
+
             unsigned int key = *forwardGraph.getSCCs().at(i).begin();
             if (forwardGraph.getSCCs().at(i).size() == 1 && !forwardGraph.getHasSelfLoop(key))
             {
@@ -103,7 +121,7 @@ public:
 
                 } while (preCount != postCount);
             }
-            cout << populateCount << " passes: R" << i << endl;
+            cout << populateCount << " passes: " << ss.str();
         }
 
         cout << endl << "Query Evaluation" << endl;

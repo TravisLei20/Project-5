@@ -8,43 +8,43 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/users/guest/l/leicr/LiveProject-5/cmake-build-debug-cs-lab-connect"/>
+				<Option working_dir="/users/guest/l/leicr/Project-5/cmake-build-debug-cs-lab-connect"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j20 -f &quot;/users/guest/l/leicr/LiveProject-5/cmake-build-debug-cs-lab-connect/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j20 -f &quot;/users/guest/l/leicr/LiveProject-5/cmake-build-debug-cs-lab-connect/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j20 -f &quot;/users/guest/l/leicr/LiveProject-5/cmake-build-debug-cs-lab-connect/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j20 -f &quot;/users/guest/l/leicr/LiveProject-5/cmake-build-debug-cs-lab-connect/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j20 -f &quot;/users/guest/l/leicr/Project-5/cmake-build-debug-cs-lab-connect/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j20 -f &quot;/users/guest/l/leicr/Project-5/cmake-build-debug-cs-lab-connect/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j20 -f &quot;/users/guest/l/leicr/Project-5/cmake-build-debug-cs-lab-connect/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j20 -f &quot;/users/guest/l/leicr/Project-5/cmake-build-debug-cs-lab-connect/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/users/guest/l/leicr/LiveProject-5/cmake-build-debug-cs-lab-connect"/>
+				<Option working_dir="/users/guest/l/leicr/Project-5/cmake-build-debug-cs-lab-connect"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j20 -f &quot;/users/guest/l/leicr/LiveProject-5/cmake-build-debug-cs-lab-connect/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j20 -f &quot;/users/guest/l/leicr/LiveProject-5/cmake-build-debug-cs-lab-connect/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j20 -f &quot;/users/guest/l/leicr/LiveProject-5/cmake-build-debug-cs-lab-connect/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j20 -f &quot;/users/guest/l/leicr/LiveProject-5/cmake-build-debug-cs-lab-connect/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j20 -f &quot;/users/guest/l/leicr/Project-5/cmake-build-debug-cs-lab-connect/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j20 -f &quot;/users/guest/l/leicr/Project-5/cmake-build-debug-cs-lab-connect/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j20 -f &quot;/users/guest/l/leicr/Project-5/cmake-build-debug-cs-lab-connect/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j20 -f &quot;/users/guest/l/leicr/Project-5/cmake-build-debug-cs-lab-connect/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/users/guest/l/leicr/LiveProject-5/cmake-build-debug-cs-lab-connect"/>
+				<Option working_dir="/users/guest/l/leicr/Project-5/cmake-build-debug-cs-lab-connect"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j20 -f &quot;/users/guest/l/leicr/LiveProject-5/cmake-build-debug-cs-lab-connect/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j20 -f &quot;/users/guest/l/leicr/LiveProject-5/cmake-build-debug-cs-lab-connect/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j20 -f &quot;/users/guest/l/leicr/LiveProject-5/cmake-build-debug-cs-lab-connect/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j20 -f &quot;/users/guest/l/leicr/LiveProject-5/cmake-build-debug-cs-lab-connect/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j20 -f &quot;/users/guest/l/leicr/Project-5/cmake-build-debug-cs-lab-connect/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j20 -f &quot;/users/guest/l/leicr/Project-5/cmake-build-debug-cs-lab-connect/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j20 -f &quot;/users/guest/l/leicr/Project-5/cmake-build-debug-cs-lab-connect/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j20 -f &quot;/users/guest/l/leicr/Project-5/cmake-build-debug-cs-lab-connect/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Project_5">
-				<Option output="/users/guest/l/leicr/LiveProject-5/cmake-build-debug-cs-lab-connect/Project_5" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/users/guest/l/leicr/LiveProject-5/cmake-build-debug-cs-lab-connect"/>
+				<Option output="/users/guest/l/leicr/Project-5/cmake-build-debug-cs-lab-connect/Project_5" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/users/guest/l/leicr/Project-5/cmake-build-debug-cs-lab-connect"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/users/guest/l/leicr/LiveProject-5/."/>
+					<Add directory="/users/guest/l/leicr/Project-5/."/>
 					<Add directory="/usr/include/c++/9"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
 					<Add directory="/usr/include/c++/9/backward"/>
@@ -54,20 +54,20 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j20 -f &quot;/users/guest/l/leicr/LiveProject-5/cmake-build-debug-cs-lab-connect/Makefile&quot;  VERBOSE=1 Project_5"/>
-					<CompileFile command="/usr/bin/make -j20 -f &quot;/users/guest/l/leicr/LiveProject-5/cmake-build-debug-cs-lab-connect/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j20 -f &quot;/users/guest/l/leicr/LiveProject-5/cmake-build-debug-cs-lab-connect/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j20 -f &quot;/users/guest/l/leicr/LiveProject-5/cmake-build-debug-cs-lab-connect/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j20 -f &quot;/users/guest/l/leicr/Project-5/cmake-build-debug-cs-lab-connect/Makefile&quot;  VERBOSE=1 Project_5"/>
+					<CompileFile command="/usr/bin/make -j20 -f &quot;/users/guest/l/leicr/Project-5/cmake-build-debug-cs-lab-connect/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j20 -f &quot;/users/guest/l/leicr/Project-5/cmake-build-debug-cs-lab-connect/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j20 -f &quot;/users/guest/l/leicr/Project-5/cmake-build-debug-cs-lab-connect/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Project_5/fast">
-				<Option output="/users/guest/l/leicr/LiveProject-5/cmake-build-debug-cs-lab-connect/Project_5" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/users/guest/l/leicr/LiveProject-5/cmake-build-debug-cs-lab-connect"/>
+				<Option output="/users/guest/l/leicr/Project-5/cmake-build-debug-cs-lab-connect/Project_5" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/users/guest/l/leicr/Project-5/cmake-build-debug-cs-lab-connect"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/users/guest/l/leicr/LiveProject-5/."/>
+					<Add directory="/users/guest/l/leicr/Project-5/."/>
 					<Add directory="/usr/include/c++/9"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
 					<Add directory="/usr/include/c++/9/backward"/>
@@ -77,101 +77,104 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j20 -f &quot;/users/guest/l/leicr/LiveProject-5/cmake-build-debug-cs-lab-connect/Makefile&quot;  VERBOSE=1 Project_5/fast"/>
-					<CompileFile command="/usr/bin/make -j20 -f &quot;/users/guest/l/leicr/LiveProject-5/cmake-build-debug-cs-lab-connect/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j20 -f &quot;/users/guest/l/leicr/LiveProject-5/cmake-build-debug-cs-lab-connect/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j20 -f &quot;/users/guest/l/leicr/LiveProject-5/cmake-build-debug-cs-lab-connect/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j20 -f &quot;/users/guest/l/leicr/Project-5/cmake-build-debug-cs-lab-connect/Makefile&quot;  VERBOSE=1 Project_5/fast"/>
+					<CompileFile command="/usr/bin/make -j20 -f &quot;/users/guest/l/leicr/Project-5/cmake-build-debug-cs-lab-connect/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j20 -f &quot;/users/guest/l/leicr/Project-5/cmake-build-debug-cs-lab-connect/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j20 -f &quot;/users/guest/l/leicr/Project-5/cmake-build-debug-cs-lab-connect/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/users/guest/l/leicr/LiveProject-5/Automaton.h">
+		<Unit filename="/users/guest/l/leicr/Project-5/Automaton.h">
 			<Option target="Project_5"/>
 		</Unit>
-		<Unit filename="/users/guest/l/leicr/LiveProject-5/BadBlockCommentAutomaton.h">
+		<Unit filename="/users/guest/l/leicr/Project-5/BadBlockCommentAutomaton.h">
 			<Option target="Project_5"/>
 		</Unit>
-		<Unit filename="/users/guest/l/leicr/LiveProject-5/BadStringAutomaton.h">
+		<Unit filename="/users/guest/l/leicr/Project-5/BadStringAutomaton.h">
 			<Option target="Project_5"/>
 		</Unit>
-		<Unit filename="/users/guest/l/leicr/LiveProject-5/ColonAutomaton.cpp">
+		<Unit filename="/users/guest/l/leicr/Project-5/ColonAutomaton.cpp">
 			<Option target="Project_5"/>
 		</Unit>
-		<Unit filename="/users/guest/l/leicr/LiveProject-5/ColonAutomaton.h">
+		<Unit filename="/users/guest/l/leicr/Project-5/ColonAutomaton.h">
 			<Option target="Project_5"/>
 		</Unit>
-		<Unit filename="/users/guest/l/leicr/LiveProject-5/ColonDashAutomaton.cpp">
+		<Unit filename="/users/guest/l/leicr/Project-5/ColonDashAutomaton.cpp">
 			<Option target="Project_5"/>
 		</Unit>
-		<Unit filename="/users/guest/l/leicr/LiveProject-5/ColonDashAutomaton.h">
+		<Unit filename="/users/guest/l/leicr/Project-5/ColonDashAutomaton.h">
 			<Option target="Project_5"/>
 		</Unit>
-		<Unit filename="/users/guest/l/leicr/LiveProject-5/CommentAutomaton.h">
+		<Unit filename="/users/guest/l/leicr/Project-5/CommentAutomaton.h">
 			<Option target="Project_5"/>
 		</Unit>
-		<Unit filename="/users/guest/l/leicr/LiveProject-5/Database.h">
+		<Unit filename="/users/guest/l/leicr/Project-5/Database.h">
 			<Option target="Project_5"/>
 		</Unit>
-		<Unit filename="/users/guest/l/leicr/LiveProject-5/DatalogProgram.h">
+		<Unit filename="/users/guest/l/leicr/Project-5/DatalogProgram.h">
 			<Option target="Project_5"/>
 		</Unit>
-		<Unit filename="/users/guest/l/leicr/LiveProject-5/Graph.h">
+		<Unit filename="/users/guest/l/leicr/Project-5/Graph.h">
 			<Option target="Project_5"/>
 		</Unit>
-		<Unit filename="/users/guest/l/leicr/LiveProject-5/Header.h">
+		<Unit filename="/users/guest/l/leicr/Project-5/Header.h">
 			<Option target="Project_5"/>
 		</Unit>
-		<Unit filename="/users/guest/l/leicr/LiveProject-5/IDAutomaton.h">
+		<Unit filename="/users/guest/l/leicr/Project-5/IDAutomaton.h">
 			<Option target="Project_5"/>
 		</Unit>
-		<Unit filename="/users/guest/l/leicr/LiveProject-5/Interpreter.h">
+		<Unit filename="/users/guest/l/leicr/Project-5/Interpreter.h">
 			<Option target="Project_5"/>
 		</Unit>
-		<Unit filename="/users/guest/l/leicr/LiveProject-5/Lexer.cpp">
+		<Unit filename="/users/guest/l/leicr/Project-5/Lexer.cpp">
 			<Option target="Project_5"/>
 		</Unit>
-		<Unit filename="/users/guest/l/leicr/LiveProject-5/Lexer.h">
+		<Unit filename="/users/guest/l/leicr/Project-5/Lexer.h">
 			<Option target="Project_5"/>
 		</Unit>
-		<Unit filename="/users/guest/l/leicr/LiveProject-5/MatcherAutomaton.cpp">
+		<Unit filename="/users/guest/l/leicr/Project-5/MatcherAutomaton.cpp">
 			<Option target="Project_5"/>
 		</Unit>
-		<Unit filename="/users/guest/l/leicr/LiveProject-5/MatcherAutomaton.h">
+		<Unit filename="/users/guest/l/leicr/Project-5/MatcherAutomaton.h">
 			<Option target="Project_5"/>
 		</Unit>
-		<Unit filename="/users/guest/l/leicr/LiveProject-5/Parameter.h">
+		<Unit filename="/users/guest/l/leicr/Project-5/Node.h">
 			<Option target="Project_5"/>
 		</Unit>
-		<Unit filename="/users/guest/l/leicr/LiveProject-5/Parser.cpp">
+		<Unit filename="/users/guest/l/leicr/Project-5/Parameter.h">
 			<Option target="Project_5"/>
 		</Unit>
-		<Unit filename="/users/guest/l/leicr/LiveProject-5/Parser.h">
+		<Unit filename="/users/guest/l/leicr/Project-5/Parser.cpp">
 			<Option target="Project_5"/>
 		</Unit>
-		<Unit filename="/users/guest/l/leicr/LiveProject-5/Predicate.h">
+		<Unit filename="/users/guest/l/leicr/Project-5/Parser.h">
 			<Option target="Project_5"/>
 		</Unit>
-		<Unit filename="/users/guest/l/leicr/LiveProject-5/Relation.h">
+		<Unit filename="/users/guest/l/leicr/Project-5/Predicate.h">
 			<Option target="Project_5"/>
 		</Unit>
-		<Unit filename="/users/guest/l/leicr/LiveProject-5/Rules.h">
+		<Unit filename="/users/guest/l/leicr/Project-5/Relation.h">
 			<Option target="Project_5"/>
 		</Unit>
-		<Unit filename="/users/guest/l/leicr/LiveProject-5/StringAutomaton.h">
+		<Unit filename="/users/guest/l/leicr/Project-5/Rules.h">
 			<Option target="Project_5"/>
 		</Unit>
-		<Unit filename="/users/guest/l/leicr/LiveProject-5/Token.cpp">
+		<Unit filename="/users/guest/l/leicr/Project-5/StringAutomaton.h">
 			<Option target="Project_5"/>
 		</Unit>
-		<Unit filename="/users/guest/l/leicr/LiveProject-5/Token.h">
+		<Unit filename="/users/guest/l/leicr/Project-5/Token.cpp">
 			<Option target="Project_5"/>
 		</Unit>
-		<Unit filename="/users/guest/l/leicr/LiveProject-5/Tuple.h">
+		<Unit filename="/users/guest/l/leicr/Project-5/Token.h">
 			<Option target="Project_5"/>
 		</Unit>
-		<Unit filename="/users/guest/l/leicr/LiveProject-5/main.cpp">
+		<Unit filename="/users/guest/l/leicr/Project-5/Tuple.h">
 			<Option target="Project_5"/>
 		</Unit>
-		<Unit filename="/users/guest/l/leicr/LiveProject-5/CMakeLists.txt">
+		<Unit filename="/users/guest/l/leicr/Project-5/main.cpp">
+			<Option target="Project_5"/>
+		</Unit>
+		<Unit filename="/users/guest/l/leicr/Project-5/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>
