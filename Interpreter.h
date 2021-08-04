@@ -77,11 +77,14 @@ public:
 
         for(unsigned int i = 0 ; i < forwardGraph.getSCCs().size() ; i++)
         {
+            populateCount = 0;
+            cout << "SCC: R" << i << endl;
             unsigned int key = *forwardGraph.getSCCs().at(i).begin();
-            if (forwardGraph.getSCCs().at(i).size() == 1 && forwardGraph.getHasSelfLoop(key))//self loop
+            if (forwardGraph.getSCCs().at(i).size() == 1 && !forwardGraph.getHasSelfLoop(key))
             {
                 cout << rules.at(key).toString() << endl;
                 evaluateRule(rules.at(key));
+                populateCount++;
             }
             else
             {
@@ -89,7 +92,6 @@ public:
                 {
                     preCount = data.count();
 
-                    //TODO Something is wrong with this
                     for (unsigned int j : forwardGraph.getSCCs().at(i))
                     {
                         cout << rules.at(j).toString() << endl;
@@ -101,17 +103,12 @@ public:
 
                 } while (preCount != postCount);
             }
+            cout << populateCount << " passes: R" << i << endl;
         }
 
-
-        cout << endl;
-        cout << "Schemes populated after " << populateCount << " passes through the Rules.";
-        cout << endl << endl;
-
-        cout << "Query Evaluation" << endl;
+        cout << endl << "Query Evaluation" << endl;
 
         evaluateAllPredicates(query);
-
 
     }
 

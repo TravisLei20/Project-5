@@ -106,7 +106,7 @@ public:
         postOrder.clear();
     }
 
-    vector<set<unsigned int>> getSCCs()
+    vector<set<unsigned int>> &getSCCs()
     {
         return SCCs;
     }
